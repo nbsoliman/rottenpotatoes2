@@ -1,0 +1,186 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/movies_helper.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/movies_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/models/movie.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1696622616
+  },
+  "Cucumber Features": {
+    "coverage": {
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/models/movie.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/movies_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/School/Software Engineering/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/movies_helper.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1696630826
+  }
+}
