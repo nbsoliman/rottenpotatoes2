@@ -4,20 +4,33 @@ RSpec.describe MoviesController, type: :controller do
   before(:all) do
     Movie.destroy_all
 
-    Movie.create( title: "Big Hero 6",
-                  rating: "PG",
-                  release_date: "2014-11-07",
-                  director: "Don Hall, Chris Williams")
-    
-    # TODO(student): add more movies to use for testing
+    @movie_with_director = Movie.create( title: "Big Hero 6",
+      rating: "PG",
+      release_date: "2014-11-07",
+      director: "Don Hall, Chris Williams")
+
+    @movie_with_director2 = Movie.create( title: "Big Hero 7",
+        rating: "PG",
+        release_date: "2014-11-07",
+        director: "Don Hall, Chris Williams")
+
+    @movie_without_director = Movie.create(title: "Unknown Movie",
+            rating: "PG",
+            release_date: "2015-05-05")
   end
   
   describe "when trying to find movies by the same director" do
-    it "returns a valid collection when a valid director is present"
-      # TODO(student): implement this test
+    it "returns a valid collection when a valid director is present" do
+      get :show_by_director, params: { id: @movie_with_director.id }
+      expect(assigns(:movies)).not_to be_empty
+    end
     
-    it "redirects to index with a warning when no director is present"
-      # TODO(student): implement this test
+    it "redirects to index with a warning when no director is present" do
+      get :show_by_director, params: {id: @movie_without_director.id}
+      
+      expect(response).to redirect_to root_path
+      expect(flash[:warning]).to match(/'Unknown Movie' has no director info/)
+    end
   end
   
   describe "creates" do

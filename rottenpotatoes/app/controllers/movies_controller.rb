@@ -21,15 +21,15 @@ class MoviesController < ApplicationController
   end
 
   def show_by_director
-    @movie = Movie.find(params[:id])
-    if @movie.director.blank?
-      flash[:warning] = "'#{@movie.title}' has no director info"
-      redirect_to root_path and return
+    movie = Movie.find(params[:id])
+    if movie.director.blank?
+      flash[:warning] = "'#{movie.title}' has no director info"
+      redirect_to root_path
+    else
+      @movies = Movie.where(director: movie.director).where.not(id: movie.id)
     end
-    @movies = Movie.where(director: @movie.director).where.not(id: @movie.id)
   end
   
-
   def edit
     @movie = Movie.find params[:id]
   end
