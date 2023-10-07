@@ -36,8 +36,12 @@ class MoviesController < ApplicationController
       redirect_to root_path
     else
       @movies = Movie.where(director: movie.director).where.not(id: movie.id)
+      if @movies.empty?
+        flash[:warning] = "No other movies by this director."
+      end
     end
   end
+  
   
   def edit
     @movie = Movie.find params[:id]

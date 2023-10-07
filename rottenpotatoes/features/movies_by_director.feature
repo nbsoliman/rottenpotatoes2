@@ -32,3 +32,12 @@ Scenario: can't find movies with the same director if we don't know the director
   When  I follow "Find Movies With Same Director"
   Then  I should be on the home page
   And   I should see "'Alien' has no director info"
+
+Scenario: no other movies by the same director
+  Given I am on the details page for "Blade Runner"
+  When I follow "Find Movies With Same Director"
+  Then I should be on the Similar Movies page for "Blade Runner"
+  And I should not see "Star Wars"
+  And I should not see "THX-1138"
+  And I should not see "Alien"
+  And I should see "No other movies by this director."
