@@ -66,5 +66,20 @@ RSpec.describe MoviesController, type: :controller do
       movie.destroy
     end
   end
+  
+  describe "GET new" do
+    it "renders the new movie template" do
+      get :new
+      expect(response).to render_template("new")
+    end
+  end
+
+  describe "GET show" do
+    it "redirects to the movies index with an alert for an invalid movie ID" do
+      get :show, params: { id: 99999 } # An ID that shouldn't exist
+      expect(response).to redirect_to movies_path
+      expect(flash[:alert]).to eq("Movie not found.")
+    end
+  end
 end
 

@@ -1,10 +1,19 @@
 class MoviesController < ApplicationController
 
+  # def show
+  #   id = params[:id] # retrieve movie ID from URI route
+  #   @movie = Movie.find(id) # look up movie by unique ID
+  #   # will render app/views/movies/show.<extension> by default
+  # end
+
   def show
-    id = params[:id] # retrieve movie ID from URI route
-    @movie = Movie.find(id) # look up movie by unique ID
-    # will render app/views/movies/show.<extension> by default
-  end
+    begin
+      @movie = Movie.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      flash[:alert] = "Movie not found."
+      redirect_to movies_path
+    end
+  end  
 
   def index
     @movies = Movie.all
