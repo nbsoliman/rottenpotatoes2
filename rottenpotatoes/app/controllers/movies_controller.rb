@@ -1,13 +1,10 @@
 class MoviesController < ApplicationController
-
   def show
-    begin
-      @movie = Movie.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
+    @movie = Movie.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
     #   flash[:alert] = "Movie not found."
-      redirect_to movies_path
-    end
-  end  
+    redirect_to movies_path
+  end
 
   def index
     @movies = Movie.all
@@ -30,13 +27,10 @@ class MoviesController < ApplicationController
       redirect_to root_path
     else
       @movies = Movie.where(director: movie.director).where.not(id: movie.id)
-      if @movies.empty?
-        flash[:warning] = "No other movies by this director."
-      end
+      flash[:warning] = 'No other movies by this director.' if @movies.empty?
     end
   end
-  
-  
+
   def edit
     @movie = Movie.find params[:id]
   end
@@ -56,9 +50,10 @@ class MoviesController < ApplicationController
   end
 
   private
+
   # Making "internal" methods private is not required, but is a common practice.
   # This helps make clear which methods respond to requests, and which ones do not.
   def movie_params
     params.require(:movie).permit(:title, :rating, :release_date, :director)
-  end  
+  end
 end

@@ -1,6 +1,7 @@
 class Movie < ActiveRecord::Base
-def others_by_same_director
-    return [] if self.director.blank?
-    Movie.where(director: self.director).where.not(id: self.id)
+  def others_by_same_director
+    return [] if director.blank?
+
+    Movie.where(director:).where.not(id:)
   end
 end
