@@ -21,17 +21,11 @@
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
           null,
           1,
           1,
-          1,
+          null,
           1,
           null,
           null,
@@ -57,6 +51,10 @@
           1,
           null,
           1,
+          1,
+          0,
+          null,
+          null,
           null,
           null,
           null,
@@ -107,7 +105,7 @@
         ]
       }
     },
-    "timestamp": 1696703120
+    "timestamp": 1696705345
   },
   "Cucumber Features": {
     "coverage": {
@@ -125,17 +123,11 @@
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
           null,
           4,
           0,
-          0,
+          null,
           0,
           null,
           null,
@@ -221,6 +213,6 @@
         ]
       }
     },
-    "timestamp": 1696704194
+    "timestamp": 1696705326
   }
 }
