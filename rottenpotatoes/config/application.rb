@@ -12,7 +12,8 @@ require File.expand_path('boot', __dir__)
 require 'rails/all'
 
 Bundler.require(:default, Rails.env)
-
+# The RottenPotatoes::Application class sets up and configures the core application settings.
+# It is responsible for bootstrapping the Rails application.
 module Rottenpotatoes
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

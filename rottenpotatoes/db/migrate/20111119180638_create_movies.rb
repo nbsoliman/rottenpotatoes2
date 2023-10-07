@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# The CreateMovies migration is responsible for creating the initial movies table in the database.
+# It defines the schema and structure of the movies table.
 class CreateMovies < ActiveRecord::Migration[6.1]
   def up
     create_table :movies do |t|

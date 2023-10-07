@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# This is the movies application controller from which other controllers inherit.
 class MoviesController < ApplicationController
   def show
     @movie = Movie.find(params[:id])

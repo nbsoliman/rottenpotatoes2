@@ -3,12 +3,20 @@
     "coverage": {
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/application_helper.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
           1,
           null
         ]
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/movies_helper.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
           1,
           null,
           1,
@@ -19,6 +27,9 @@
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/movies_controller.rb": {
         "lines": [
+          null,
+          null,
+          null,
           1,
           1,
           1,
@@ -82,6 +93,9 @@
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/application_controller.rb": {
         "lines": [
+          null,
+          null,
+          null,
           1,
           null,
           null,
@@ -91,6 +105,10 @@
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/movie.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
           1,
           1,
           3,
@@ -101,12 +119,16 @@
         ]
       }
     },
-    "timestamp": 1696709569
+    "timestamp": 1696718718
   },
   "Cucumber Features": {
     "coverage": {
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/movie.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
           1,
           1,
           0,
@@ -118,6 +140,9 @@
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/movies_controller.rb": {
         "lines": [
+          null,
+          null,
+          null,
           1,
           1,
           4,
@@ -181,6 +206,9 @@
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/application_controller.rb": {
         "lines": [
+          null,
+          null,
+          null,
           1,
           null,
           null,
@@ -190,12 +218,20 @@
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/application_helper.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
           1,
           null
         ]
       },
       "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/movies_helper.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
           1,
           null,
           1,
@@ -205,6 +241,6 @@
         ]
       }
     },
-    "timestamp": 1696709604
+    "timestamp": 1696718708
   }
 }
