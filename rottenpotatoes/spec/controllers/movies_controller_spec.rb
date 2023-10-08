@@ -36,12 +36,23 @@ RSpec.describe MoviesController, type: :controller do
   end
 
   describe 'creates' do
-    it 'movies with valid parameters' do
-      get :create, params: { movie: { title: 'Toucan Play This Game', director: 'Armando Fox',
-                                      rating: 'G', release_date: '2017-07-20' } }
-      expect(response).to redirect_to movies_path
-      expect(flash[:notice]).to match(/Toucan Play This Game was successfully created./)
-      Movie.find_by(title: 'Toucan Play This Game').destroy
+    context 'with valid parameters' do
+      before do
+        get :create, params: { movie: { title: 'Toucan Play This Game', director: 'Armando Fox',
+                                        rating: 'G', release_date: '2017-07-20' } }
+      end
+
+      after do
+        Movie.find_by(title: 'Toucan Play This Game').destroy
+      end
+
+      it 'redirects to movies path' do
+        expect(response).to redirect_to movies_path
+      end
+
+      it 'shows a success flash message' do
+        expect(flash[:notice]).to match(/Toucan Play This Game was successfully created./)
+      end
     end
   end
 
