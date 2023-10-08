@@ -44,7 +44,7 @@ When('I follow {string}') do |string|
 end
 
 Then('I should be on the Similar Movies page for {string}') do |string|
-  expect(page.current_path).to eq same_director_path(Movie.find_by(title: string))
+  expect(page).to have_current_path same_director_path(Movie.find_by(title: string)), ignore_query: true
 end
 
 Then('I should see {string}') do |string|
@@ -56,7 +56,7 @@ Then('I should not see {string}') do |string|
 end
 
 Then('I should be on the home page') do
-  expect(page.current_path).to eq movies_path
+  expect(page).to have_current_path movies_path, ignore_query: true
 end
 
 When(/^I go to the edit page for "(.*)"/) do |movie_name|
