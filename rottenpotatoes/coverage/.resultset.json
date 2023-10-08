@@ -117,9 +117,19 @@
           null,
           null
         ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1696729702
+    "timestamp": 1696800622
   },
   "Cucumber Features": {
     "coverage": {
@@ -135,6 +145,16 @@
           null,
           0,
           null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
           null
         ]
       },
@@ -241,6 +261,6 @@
         ]
       }
     },
-    "timestamp": 1696729710
+    "timestamp": 1696800633
   }
 }

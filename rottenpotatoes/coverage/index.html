@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-07T20:48:30-05:00">2023-10-07T20:48:30-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-08T16:30:33-05:00">2023-10-08T16:30:33-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  90.48%
+  90.91%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.24
+         2.23
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>5</b> files in total.
+    <b>6</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>42</b> relevant lines,
-    <span class="green"><b>38</b> lines covered</span> and
+    <b>44</b> relevant lines,
+    <span class="green"><b>40</b> lines covered</span> and
     <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  90.48%
+  90.91%
 </span>
 )
   </div>
@@ -111,6 +111,17 @@
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1.33</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#59b47f044e4b2f0d73b1f855d17c79da93c40bb6" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.00</td>
             
           </tr>
         
@@ -282,7 +293,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.75
+         3.17
        </span>
     </span> hits/line
     )
@@ -291,12 +302,12 @@
   <a name="Models"></a>
 
   <div>
-    <b>1</b> files in total.
+    <b>2</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>4</b> relevant lines,
-    <span class="green"><b>4</b> lines covered</span> and
+    <b>6</b> relevant lines,
+    <span class="green"><b>6</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -321,6 +332,17 @@
         </tr>
       </thead>
       <tbody>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#59b47f044e4b2f0d73b1f855d17c79da93c40bb6" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.00</td>
+            
+          </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#f84fe1700f672ba5838bc94a1613eaa9cd93e7f4" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
@@ -1673,6 +1695,103 @@
 </div>
 
       
+        <div class="source_table" id="59b47f044e4b2f0d73b1f855d17c79da93c40bb6">
+  <div class="header">
+    <h3>app/models/application_record.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>2</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby"># This is the main application controller from which other controllers inherit.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">class ApplicationRecord &lt; ActiveRecord::Base</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  self.abstract_class = true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="f84fe1700f672ba5838bc94a1613eaa9cd93e7f4">
   <div class="header">
     <h3>app/models/movie.rb</h3>
@@ -1750,7 +1869,7 @@
 
             
 
-            <code class="ruby">class Movie &lt; ActiveRecord::Base</code>
+            <code class="ruby">class Movie &lt; ApplicationRecord</code>
           </li>
         </div>
       

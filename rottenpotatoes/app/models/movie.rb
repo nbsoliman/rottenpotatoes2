@@ -2,7 +2,7 @@
 
 # The Movie class represents a movie entity in the system.
 # It encapsulates the attributes and behaviors associated with a movie.
-class Movie < ActiveRecord::Base
+class Movie < ApplicationRecord
   def others_by_same_director
     return [] if director.blank?
 
