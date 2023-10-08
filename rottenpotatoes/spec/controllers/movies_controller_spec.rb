@@ -46,29 +46,34 @@ RSpec.describe MoviesController, type: :controller do
   end
 
   describe 'updates' do
-    it 'redirects to the movie details page and flashes a notice' do
-      movie = Movie.create(title: 'Outfoxed!', director: 'Nick Mecklenburg',
-                           rating: 'PG-13', release_date: '2023-12-17')
-      get :update,
-          params: {
-            id: movie.id,
-            movie: {
-              description: 'Critics rave about this epic new thriller. Watch as main characters Armando ' \
-             'Fox and Michael Ball, alongside their team of TAs, battle against the challenges ' \
-             'of a COVID-19-induced virtual semester, a labyrinthian and disconnected assignment ' \
-             'stack, and the ultimate betrayal from their once-trusted ally: Codio exams.'
+    let(:movie) do
+      Movie.create(title: 'Outfoxed!', director: 'Nick Mecklenburg', rating: 'PG-13', release_date: '2023-12-17')
+    end
 
+    context 'when updating the movie' do
+      before do
+        get :update,
+            params: {
+              id: movie.id,
+              movie: {
+                description: 'Critics rave about this epic new thriller. Watch as main characters Armando ' \
+               'Fox and Michael Ball, alongside their team of TAs, battle against the challenges ' \
+               'of a COVID-19-induced virtual semester, a labyrinthian and disconnected assignment ' \
+               'stack, and the ultimate betrayal from their once-trusted ally: Codio exams.'
+              }
             }
-          }
+      end
 
-      expect(response).to redirect_to movie_path(movie)
-      expect(flash[:notice]).to match(/Outfoxed! was successfully updated./)
-      movie.destroy
+      it 'redirects to the movie details page' do
+        expect(response).to redirect_to movie_path(movie)
+      end
+
+      it 'flashes a notice' do
+        expect(flash[:notice]).to match(/Outfoxed! was successfully updated./)
+      end
     end
 
     it 'actually does the update' do
-      movie = Movie.create(title: 'Outfoxed!', director: 'Nick Mecklenburg',
-                           rating: 'PG-13', release_date: '2023-12-17')
       get :update, params: { id: movie.id, movie: { director: 'Not Nick!' } }
 
       expect(assigns(:movie).director).to eq('Not Nick!')
