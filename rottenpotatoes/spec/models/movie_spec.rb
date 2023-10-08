@@ -3,7 +3,11 @@
 require 'rails_helper'
 
 RSpec.describe Movie, type: :model do
-  # Using let! to ensure these are created before each example
+  before do
+    # Clear out the movies table to start fresh
+    described_class.destroy_all
+  end
+
   let!(:big_hero) do
     described_class.create(title: 'Big Hero 6', director: 'Don Hall', rating: 'PG', release_date: '2014-11-07')
   end
@@ -12,11 +16,6 @@ RSpec.describe Movie, type: :model do
   end
   let!(:moana) do
     described_class.create(title: 'Moana', director: 'Don Hall', rating: 'PG', release_date: '2016-11-23')
-  end
-
-  before(:all) do
-    # Clear out the movies table to start fresh
-    described_class.destroy_all
   end
 
   describe 'others_by_same_director method' do
