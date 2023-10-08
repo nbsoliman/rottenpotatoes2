@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe MoviesController, type: :controller do
-  before(:all) do
+  before do
     Movie.destroy_all
 
     @movie_with_director = Movie.create(title: 'Big Hero 6',

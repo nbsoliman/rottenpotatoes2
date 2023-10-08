@@ -20,7 +20,7 @@ end
 
 Then(/I should see all the movies/) do
   # Make sure that all the movies in the app are visible in the table
-  Movie.all.each do |movie|
+  Movie.all.find_each do |movie|
     step %(I should see "#{movie.title}")
   end
 end
