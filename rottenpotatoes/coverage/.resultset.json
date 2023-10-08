@@ -1,0 +1,268 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/movies_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/movies_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/movie.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1696806700
+  },
+  "Cucumber Features": {
+    "coverage": {
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/movie.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/movies_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          4,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          3,
+          null,
+          3,
+          1,
+          1,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/nicholassoliman/Documents/GitHub/rottenpotatoes2/rottenpotatoes/app/helpers/movies_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1696806620
+  }
+}
