@@ -1,4 +1,11 @@
+inherit_from: .rubocop_todo.yml
+
 require:
   - rubocop-capybara
   - rubocop-rails
   - rubocop-rspec
+
+# Style/ArrayIntersect:
+#   Enabled: true
+# AllCops:
+#   NewCops: enable
